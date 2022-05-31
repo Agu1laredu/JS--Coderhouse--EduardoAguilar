@@ -1,15 +1,19 @@
-for ( i = 0 ; i <= 5 ; i++) {
-        let x = 1 ;
-        while (x <= 24) {
-                console.log(`Hora del dia ${x} hs`) ;
-                x++;
-        }
-        console.log(`Finaliza un dia, comienza el otro `)
-        
+let cA = parseInt(prompt("Indique cuantos alumnos registrara")) ;
+let eA ;
+let sA = 0 ;
+let n;
+
+
+for (n=1;n<=cA; n++) {
+        eA = parseInt(prompt("Ingrese la edad del alumno" + n));
+      
+        sA = sA + eA ;
+
+
 }
-console.log('Fin de la semana');
+
+console.log(`El promedio de las edades de los ${cA} alumnos es: ${sA, cA}`) ;
 
 
-// En este bucle anidamos for y while para contar los dias de la semana (5) y las horas del dia (24); 
 
-
+// Algoritmo para calcular la edad promedio de un grupo de personas
