@@ -12,7 +12,7 @@ for (n=1;n<=cA; n++) {
 
 }
 
-console.log(`El promedio de las edades de los ${cA} alumnos es: ${sA, cA}`) ;
+console.log(`El promedio de las edades de los ${cA} alumnos es: ${sA / cA}`) ;
 
 
 
