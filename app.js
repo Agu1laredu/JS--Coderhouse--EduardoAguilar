@@ -1,19 +1,21 @@
-let cA = parseInt(prompt("Indique cuantos alumnos registrara")) ;
-let eA ;
-let sA = 0 ;
-let n;
+function capturar() {
+  function Persona(nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+  }
 
+  let nombreCapturar = document.getElementById("nombre").value;
+  let edadCapturar = document.getElementById("edad").value;
 
-for (n=1;n<=cA; n++) {
-        eA = parseInt(prompt("Ingrese la edad del alumno" + n));
-      
-        sA = sA + eA ;
-
-
+  nuevoSujeto = new Persona(nombreCapturar, edadCapturar);
+  console.log(nuevoSujeto);
+  agregar();
 }
 
-console.log(`El promedio de las edades de los ${cA} alumnos es: ${sA / cA}`) ;
+let baseDatos = [];
 
-
-
-// Algoritmo para calcular la edad promedio de un grupo de personas
+function agregar() {
+  baseDatos.push(nuevoSujeto);
+  console.log(baseDatos);
+  document.getElementById("tabla").innerHTML += ' <tbody> <td> ' +nuevoSujeto.nombre+'</td><td></td> ' +nuevoSujeto.edad+' </tbody>';
+}
